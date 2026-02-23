@@ -52,11 +52,11 @@ var numberArray = [1,2,3]
 var animals = new Array("cat", "dog" , "mouse" , "lion")
 //object
 
-var person = {
-    name:"Avinash Kushwaha",
-    age:18,
-    title:"Student of AIML"
-}
+// var person = {
+//     name:"Avinash Kushwaha",
+//     age:18,
+//     title:"Student of AIML"
+// }
 
 /* 
 Symbol type: New Primitive data type introduced in ES6d
@@ -98,16 +98,28 @@ b = 20
 
 //Ternary Opeartor --> variablename = (condition)?value1:value2;
 
-var age = 21
-var voteable = (age<18) ? console.log("Too young"):console.log("Young enough");
+// var age = 21
+// var voteable = (age<18) ? console.log("Too young"):console.log("Young enough");
 
 
-var count;
-document.write("Starting loop" + "<br/>")
+// var count;
+// document.write("Starting loop" + "<br/>")
 
-for(count =0; count<10; count++){
-    document.write("Current Count: "+count)
-    document.write("<br/>")
+// for(count =0; count<10; count++){
+//     document.write("Current Count: "+count)
+//     document.write("<br/>")
+// }
+
+// document.write("Loop Stopped!")
+
+//for in loops
+
+const person = {
+    "fname":"Avinash",
+    "lname":"Kushwaha",
+    "age":19
+};
+
+for(let x in person){
+    console.log("Person details: "+x  +": "+person[x])
 }
-
-document.write("Loop Stopped!")
