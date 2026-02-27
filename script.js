@@ -134,21 +134,26 @@ else{
 }
 
 
-var grade = 'A'
-switch(grade){
-    case 'A':
-        console.log("Good job")
-        break;
-    case 'B':
-        console.log("Pretty Good")
-        break;
-    case 'C':
-        console.log("Passed")
-        break
-    case 'D':
-        console.log("Not so good")
-        break;
+// var grade = 'A'
+// switch(grade){
+//     case 'A':
+//         console.log("Good job")
+//         break;
+//     case 'B':
+//         console.log("Pretty Good")
+//         break;
+//     case 'C':
+//         console.log("Passed")
+//         break
+//     case 'D':
+//         console.log("Not so good")
+//         break;
     
-    default:
-        console.log("Wrong Input")
-}
+//     default:
+//         console.log("Wrong Input")
+// }
+
+// function doWhatever(){
+//     //Code
+// }
+
