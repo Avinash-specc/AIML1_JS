@@ -111,15 +111,15 @@ b = 20;
 
 //for in loops
 
-const person = {
-  fname: "Avinash",
-  lname: "Kushwaha",
-  age: 19,
-};
+// const person = {
+//   fname: "Avinash",
+//   lname: "Kushwaha",
+//   age: 19,
+// };
 
-for (let x in person) {
-  // console.log("Person details: "+x  +": "+person.x) //person.x will return an undefined value.
-}
+// for (let x in person) {
+//   // console.log("Person details: "+x  +": "+person.x) //person.x will return an undefined value.
+// }
 
 var age = 20;
 if (age >= 18) {
@@ -153,6 +153,29 @@ if (age >= 18) {
 
 //Arrow functions -->
 var add2 = (a, b) => {
-  return console.log(a + b);  //Explicit return. Implicit return is done withoug using curley braces and without writing return on the same line.
-} 
+//   console.log(a + b);  //Explicit return. Implicit return is done withoug using curley braces and without writing return on the same line.
+}
 (add2(10,20))
+
+// var person = {
+//     name:"Avinash Kushwaha",
+//     age:20,
+//     isMarried:false,
+//     "address":{
+//         street:'Vinay Nagar',
+//         flatNo:201
+//     }
+// }
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.isMarried)
+// console.log(person["address"])
+
+var person2 = new Object()
+person2.name = "Avinash"
+person2.age = "20"
+person2.address ={}
+person2.address.street="nagar road"
+person2["address"]["flatNo"] = 33
+
+console.log(person2)
