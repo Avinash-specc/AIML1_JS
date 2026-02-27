@@ -121,5 +121,34 @@ const person = {
 };
 
 for(let x in person){
-    console.log("Person details: "+x  +": "+person[x])
+
+    // console.log("Person details: "+x  +": "+person.x) //person.x will return an undefined value.
+}
+
+var age = 20;
+if (age>=18){
+    // console.log("<b>You are eligible to cast the vote.</b>") //Bold works in html file.
+}
+else{
+    // console.log("You are a minor.")
+}
+
+
+var grade = 'A'
+switch(grade){
+    case 'A':
+        console.log("Good job")
+        break;
+    case 'B':
+        console.log("Pretty Good")
+        break;
+    case 'C':
+        console.log("Passed")
+        break
+    case 'D':
+        console.log("Not so good")
+        break;
+    
+    default:
+        console.log("Wrong Input")
 }
