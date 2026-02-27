@@ -18,8 +18,6 @@ x = 20     //Redeclaration is not allowed in let, But re-declaration is not allo
 //re-declaration is allowed in var
 */
 
-
-
 // var num = 10;
 // console.log(num)
 // console.log(typeof(num))
@@ -43,13 +41,13 @@ object
 function
 */
 
-var sayHello = function (){
-    alert("Hello world")
-}
+var sayHello = function () {
+  alert("Hello world");
+};
 
 //object
-var numberArray = [1,2,3]
-var animals = new Array("cat", "dog" , "mouse" , "lion")
+var numberArray = [1, 2, 3];
+var animals = new Array("cat", "dog", "mouse", "lion");
 //object
 
 // var person = {
@@ -76,17 +74,17 @@ Symbol type: New Primitive data type introduced in ES6d
 //     console.log("false") //Because Each symbol is different
 // }
 
-var a =10
-var b = 13
-var c = 10
+var a = 10;
+var b = 13;
+var c = 10;
 // var linebreak = "<br>"
 // document.write(a+b+c)
 // result = a+b+c
 // document.write(result)
 // document.write(linebreak)
 
-a = 10
-b = 20
+a = 10;
+b = 20;
 // document.write("(a<b>) => ")
 // result = (a<b)
 // document.write(result)
@@ -101,7 +99,6 @@ b = 20
 // var age = 21
 // var voteable = (age<18) ? console.log("Too young"):console.log("Young enough");
 
-
 // var count;
 // document.write("Starting loop" + "<br/>")
 
@@ -115,24 +112,21 @@ b = 20
 //for in loops
 
 const person = {
-    "fname":"Avinash",
-    "lname":"Kushwaha",
-    "age":19
+  fname: "Avinash",
+  lname: "Kushwaha",
+  age: 19,
 };
 
-for(let x in person){
-
-    // console.log("Person details: "+x  +": "+person.x) //person.x will return an undefined value.
+for (let x in person) {
+  // console.log("Person details: "+x  +": "+person.x) //person.x will return an undefined value.
 }
 
 var age = 20;
-if (age>=18){
-    // console.log("<b>You are eligible to cast the vote.</b>") //Bold works in html file.
+if (age >= 18) {
+  // console.log("<b>You are eligible to cast the vote.</b>") //Bold works in html file.
+} else {
+  // console.log("You are a minor.")
 }
-else{
-    // console.log("You are a minor.")
-}
-
 
 // var grade = 'A'
 // switch(grade){
@@ -148,7 +142,7 @@ else{
 //     case 'D':
 //         console.log("Not so good")
 //         break;
-    
+
 //     default:
 //         console.log("Wrong Input")
 // }
@@ -157,3 +151,8 @@ else{
 //     //Code
 // }
 
+//Arrow functions -->
+var add2 = (a, b) => {
+  return console.log(a + b);  //Explicit return. Implicit return is done withoug using curley braces and without writing return on the same line.
+} 
+(add2(10,20))
