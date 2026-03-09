@@ -220,3 +220,8 @@ let trainerInfo = [
 ]
 
 console.log(trainerInfo[trainerInfo.length-1])
+
+// HTML DOM is a hierarchial representation of HTML documents. It defines the structure and properties of elements on a webpage, enabling Javascript to  dynamically access, manipulate, and update content, enhancing interactivity and functionality.
+
+//Window Object --> It is object of the browser which is always at top of the hierarchy. It is like an API that is used to set and access all the properties and methods of the browser. It is automatically created the browser.
+//Document object is property of window object. 
