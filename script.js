@@ -178,4 +178,45 @@ person2.address ={}
 person2.address.street="nagar road"
 person2["address"]["flatNo"] = 33
 
-console.log(person2)
+// console.log(person2)
+
+//array 
+
+// It is an ordered collection of data (either primitive or object depending upon the language). Arrays are used to store multiple values in a single variable.
+//It can be collection of anything.
+//It is a special kind of object.
+/*
+
+
+
+
+*/
+
+var myInfo = new Array();
+var myInfo1 = Array()
+
+console.log(myInfo, myInfo1)
+
+let collection = [
+  {},
+  [],
+  true,
+  "john",
+  function(){},
+  undefined,
+  new String("abc"),
+  new Date(),
+]
+// console.log(collection[3])
+
+collection.teacherName = "john Mac"
+// console.log(collection) // TeacherName will be printed still the size of the array will not change. It will be just stored as a property Name.
+
+let trainerInfo = [
+  "Jitendra",
+  29,
+  "Ghaziabad",
+  {isMarried:true},
+]
+
+console.log(trainerInfo[trainerInfo.length-1])
