@@ -225,3 +225,16 @@ console.log(trainerInfo[trainerInfo.length-1])
 
 //Window Object --> It is object of the browser which is always at top of the hierarchy. It is like an API that is used to set and access all the properties and methods of the browser. It is automatically created the browser.
 //Document object is property of window object. 
+
+
+//Selecting with the tag
+// document.getElementsByTagName("p") --> returns a node list
+
+//Query Selector-->
+// Document.querySelector("myId/myClass/tag") //returns the very first element
+
+// Document.querySelectorAll() //returns the nodelist of all elements 
+
+const element = document.getElementById("myh1")
+let text = element.getAttribute("class")
+document.getElementById("demoClass").innerHTML = text

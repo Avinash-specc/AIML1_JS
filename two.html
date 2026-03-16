@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+    <!-- <h1 id="myH1">The Element Object</h1> -->
+     <h2>Dom close() Method</h2>
+     <button onclick = "practice()">Click me</button>
+     <button onmouseover="onMouseOver()">onMouseOver</button>
+     <button onmouseout="onMouseOut()">onMouseOut</button>
+    <script>
+        // function myFunction(){
+        //     document.getElementById("myH1").setAttribute("class","demoClass")
+        // }
+
+        // const heading = document.createElement('h2')
+        // const bodyTag = document.getElementByTagName("body")
+        // bodyTag[0].append(heading)
+        // node.prepend() // adds at the start of the node(inside)
+        //node.before()//adds before the node (outside)
+        //node.after() // adds after the node(outside)
+
+        // node.remove() // It is used to remove an element.
+
+        function practice(){
+            document.open()
+            document.write("<h1>Practice</h1>")
+            document.close()
+        }
+        function onMouseOver(){
+            console.log("On Mouse Over")
+        }
+        function onMouseOut(){
+            console.log("onMouseOut")
+        }
+
+
+        //Form events
+
+        //The change in the state of an object is known as Event.
+
+        // x.addEventListener('listener',handler()) //handler is a function which is invoked
+
+
+        function myFunction(){
+            alert("Web Page Loaded Successfully")
+        }
+    </script>
+</body>
+</html>
