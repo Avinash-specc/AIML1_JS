@@ -33,3 +33,33 @@ var promise = new Promise((resolve,reject)=>{
 
 promise.then(result => console.log(result))
 .catch(error=>console.log(error))
+
+/*
+
+async and await allow asynchronous code to be written in a synchronous style.
+
+
+*/ 
+
+// async function getData() {
+//     let response = await fetch ("https://jsonplaceholder.typicode.com/users")
+//     let data = await response.json()
+//     console.log(data)
+// }
+//The Fetch API is used to request data from a server.
+
+//Error handling
+//Errors can be handled using try...catch
+
+try{
+    var x  = y+10
+}
+catch(error){
+    console.log(error.message)
+}
+
+// getData()
+
+//Local Storage --> stored in the form of a string only.
+localStorage.setItem("name","Avi")
+var name = localStorage.getItem("name")

@@ -1,39 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Java Script basic</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <script src = "./script.js"></script> -->
 
     <!-- <button onCLick="showHello()">Try it</button> -->
     <!-- <input type="button" onClick="sayHello('Avinash',20)" value = "SayHello"> -->
 
     <div id="para" class="heading">
-    <h1 id="myh1" class="demoClass">The Element Object</h1>
-    
+      <h1 id="myh1" class="demoClass">The Element Object</h1>
     </div>
-    <!-- <script> -->
-        // function showHello(){
-        //     alert("Hello world!")
-        // }
-        function sayHello(name,age){
-            // document.write(name+" is "+age+" years old.")
-        }
+    <script>
+      // function showHello(){
+      //     alert("Hello world!")
+      // }
+      function sayHello(name, age) {
+        // document.write(name+" is "+age+" years old.")
+      }
 
-        var result = mul(12,30)
-        function mul(x,y){
-            return x*y
-        }
-        // document.write(result)
+      var result = mul(12, 30);
+      function mul(x, y) {
+        return x * y;
+      }
+      // document.write(result)
 
-        //Arrow functions 
-        var add2 = (a,b) =>{
-            console.log(a+b)
-        }
-        
-    <!-- </script> -->
-</body>
+      //Arrow functions
+      var add2 = (a, b) => {
+        console.log(a + b);
+      };
+
+      //StoreObject:
+      localStorage.setItem("name", "Avi");
+      var name = localStorage.getItem("name");
+      console.log(name)
+
+      //Retrieve Object:
+      var data = JSON.parse(localStorage.getItem("user"))
+      console.log(data.name)
+    </script>
+  </body>
 </html>
